@@ -1,5 +1,10 @@
 a = input("please enter your email : ")
-if "@" in a and "." in a :
-    print("your email is valid")
-else: 
-    print("your email is not valid. please check it again")
+def email(a):
+    if "@" in a and "." in a :
+        return True
+    else:
+        return False
+if email(a) == True :
+    print("valid")
+else :
+    print("not valid")
